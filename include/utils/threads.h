@@ -17,6 +17,7 @@
 #ifndef _LIBS_UTILS_THREADS_H
 #define _LIBS_UTILS_THREADS_H
 
+#error DO NOT USE!
 /*
  * Please, DO NOT USE!
  *
