@@ -17,7 +17,8 @@
 #ifndef UTILS_LOOPER_H
 #define UTILS_LOOPER_H
 
-#include <utils/threads.h>
+#include <climits>
+#include <utils/Mutex.h>
 #include <utils/RefBase.h>
 #include <utils/KeyedVector.h>
 #include <utils/Timers.h>

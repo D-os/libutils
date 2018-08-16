@@ -20,7 +20,7 @@
 #include <stdint.h>
 #include <unistd.h>
 
-#include <android/log.h>
+//#include <android/log.h>
 #include <gtest/gtest.h>
 #include <utils/Vector.h>
 

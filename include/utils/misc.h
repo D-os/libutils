@@ -20,6 +20,12 @@
 #ifndef _LIBS_UTILS_MISC_H
 #define _LIBS_UTILS_MISC_H
 
+#include <stdint.h>
+#define SIZE_T_MAX SIZE_MAX
+
+#include <unistd.h>
+#define PAGE_SIZE sysconf(_SC_PAGESIZE)
+
 #include <utils/Endian.h>
 
 /* get #of elements in a static array

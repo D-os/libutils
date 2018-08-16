@@ -68,7 +68,7 @@ static char16_t* allocFromUTF8(const char* u8str, size_t u8len)
 
 static char16_t* allocFromUTF16(const char16_t* u16str, size_t u16len) {
     if (u16len >= SIZE_MAX / sizeof(char16_t)) {
-        android_errorWriteLog(0x534e4554, "73826242");
+//        android_errorWriteLog(0x534e4554, "73826242");
         abort();
     }
 
@@ -180,7 +180,7 @@ status_t String16::setTo(const char16_t* other)
 status_t String16::setTo(const char16_t* other, size_t len)
 {
     if (len >= SIZE_MAX / sizeof(char16_t)) {
-        android_errorWriteLog(0x534e4554, "73826242");
+//        android_errorWriteLog(0x534e4554, "73826242");
         abort();
     }
 
@@ -208,7 +208,7 @@ status_t String16::append(const String16& other)
     }
 
     if (myLen >= SIZE_MAX / sizeof(char16_t) - otherLen) {
-        android_errorWriteLog(0x534e4554, "73826242");
+//        android_errorWriteLog(0x534e4554, "73826242");
         abort();
     }
 
@@ -234,7 +234,7 @@ status_t String16::append(const char16_t* chrs, size_t otherLen)
     }
 
     if (myLen >= SIZE_MAX / sizeof(char16_t) - otherLen) {
-        android_errorWriteLog(0x534e4554, "73826242");
+//        android_errorWriteLog(0x534e4554, "73826242");
         abort();
     }
 

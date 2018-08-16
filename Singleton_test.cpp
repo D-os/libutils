@@ -18,8 +18,8 @@
 
 #include <dlfcn.h>
 
-#include <android-base/file.h>
-#include <android-base/stringprintf.h>
+//#include <android-base/file.h>
+//#include <android-base/stringprintf.h>
 #include <utils/Singleton.h>
 
 #include <gtest/gtest.h>

@@ -16,7 +16,7 @@
 
 #include <stdlib.h>
 
-#include <android/log.h>
+//#include <android/log.h>
 #include <gtest/gtest.h>
 #include <utils/JenkinsHash.h>
 #include <utils/LruCache.h>
