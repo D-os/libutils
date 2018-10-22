@@ -28,7 +28,7 @@ add_library(utils SHARED
         "CallStack.cpp"
         "ProcessCallStack.cpp"
 )
+target_compile_options(utils PRIVATE -fPIC)
 target_link_libraries(utils cutils dl)
-#set_target_properties(utils PROPERTIES LINKER_LANGUAGE C)
 
 add_subdirectory(tests)
