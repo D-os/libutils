@@ -14,6 +14,7 @@ add_executable(libutils_tests
         "Vector_test.cpp"
         "Looper_test.cpp"
         "RefBase_test.cpp"
+	"../SharedBufferTest.cpp"
 )
 
 target_link_libraries(libutils_tests gtest_main gtest z utils)
