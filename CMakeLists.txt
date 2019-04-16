@@ -13,6 +13,7 @@ add_library(utils SHARED
         "PropertyMap.cpp"
         "RefBase.cpp"
         "SharedBuffer.cpp"
+        "Static.cpp"
         "StopWatch.cpp"
         "String8.cpp"
         "String16.cpp"
