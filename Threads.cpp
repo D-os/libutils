@@ -36,7 +36,7 @@
 
 #include <utils/Log.h>
 
-#include <processgroup/sched_policy.h>
+//#include <processgroup/sched_policy.h>
 
 #if defined(__ANDROID__)
 # define __android_unused
@@ -79,11 +79,11 @@ struct thread_data_t {
         char * name = t->threadName;
         delete t;
         setpriority(PRIO_PROCESS, 0, prio);
-        if (prio >= ANDROID_PRIORITY_BACKGROUND) {
-            set_sched_policy(0, SP_BACKGROUND);
-        } else {
-            set_sched_policy(0, SP_FOREGROUND);
-        }
+//        if (prio >= ANDROID_PRIORITY_BACKGROUND) {
+//            set_sched_policy(0, SP_BACKGROUND);
+//        } else {
+//            set_sched_policy(0, SP_FOREGROUND);
+//        }
 
         if (name) {
             androidSetThreadName(name);

@@ -9,7 +9,7 @@
 #include <unistd.h>
 #include <time.h>
 
-#include <utils/threads.h>
+#include <utils/Thread.h>
 
 // # of milliseconds to fudge stopwatch measurements
 #define TIMING_TOLERANCE_MS 25
