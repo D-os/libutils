@@ -50,3 +50,5 @@ add_executable(libutils_tests
 )
 
 target_link_libraries(libutils_tests gtest_main gtest z base utils)
+
+gtest_discover_tests(libutils_tests)
